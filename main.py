@@ -1,10 +1,12 @@
-for i in range(1,1001):
-    num = i
-    result = 0
-    n = len(str(num))
-    while(i!=0):
-        rem = i%10
-        result = result + rem ** n
-        i = i//10
-    if result == num:
-        print(num)
+n = int(input("Enter the number of rows: "))
+for i in range(1,n+1):
+  for j in range(1,i+1):
+    print(j,end=" ")
+  print()
+
+
+
+for i in range(1,n+1):
+  for j in range(1,i+1):
+    print(i,end=" ")
+  print()
