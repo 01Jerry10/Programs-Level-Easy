@@ -1,8 +1,7 @@
 n = int(input("Enter the range: "))
+num =1
 for i in range(n):
-  for j in range(n):
-    if i == 0 or j == (n-1) or i==j:
-      print("*",end ="")
-    else:
-      print(end=" ")
+  for j in range(i):
+    print(num,end="")
+    num += 1
   print()
