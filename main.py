@@ -1,9 +1,8 @@
-def fact(n):
-  if n==0:
-    return 1
-  else:
-    return n*fact(n-1)
-
-n = int(input("Enter a number:"))
-result = fact(n)
-print(result)
+n = int(input("Enter the range: "))
+for i in range(n):
+  for j in range(n):
+    if i == 0 or j == (n-1) or i==j:
+      print("*",end ="")
+    else:
+      print(end=" ")
+  print()
